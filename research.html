@@ -34,11 +34,23 @@ urchinTracker();
 
 
 
-<h2>Edge Computing Operation & Management </h2>
 
 
 
-<h2>Crowd-Leanring in Smart City </h2>
+<h2>Crowd-based Reinforcement Leanring </h2>
+
+
+
+<h2>Edge Computing </h2>
+In mobile Internet ecosystem, Mobile Users (MUs) purchase wireless data services from Internet Service Provider (ISP) to access to Internet and acquire the interested content services (e.g., online game) from Content Provider (CP). 
+The popularity of intelligent functions (e.g., AI and 3D modeling) increases the computation-intensity of the content services, leading to a growing computation pressure for the MUs' resource-limited devices. 
+To this end, edge computing service is emerging as a promising approach to alleviate the MUs' computation pressure while keeping their quality-of-service, via offloading some computation tasks of MUs to edge (computing) servers deployed at the local network edge. 
+Thus, Edge Service Provider (ESP), who deploys the edge servers and offers the edge computing service, becomes an upcoming new stakeholder in the ecosystem.<br>
+
+<img src="./research/Ecosystem.png" alt="Photo" height="170px" >&nbsp;
+<img src="./research/Ecosystem_MUPayoff.png" alt="Photo" height="175px" >&nbsp;
+<img src="./research/Ecosystem_ESPRevenue.png" alt="Photo" height="180px" >&nbsp;
+
 
 
 
@@ -49,57 +61,50 @@ urchinTracker();
 
 <h2>Flexible Mobile Network Optimization</h2>
 
-Nowadays the growing data demand and more severe market competition force mobile network operators (MNOs) to offer more flexible wireless data services. 
-The classic wireless data service is a three-part tariff, consisting of a monthly data cap, a monthly subscription fee, and a per-unit fee. 
-More flexible wireless data service is often in terms of providing additional flexibility in terms of <b>time</b>, <b>user</b>, and <b>location</b>.	
+The growing data demand and more severe market competition force mobile network operators (MNOs) to offer more flexible wireless data services. 
+The classic wireless data service is a three-part tariff, consisting of a monthly data cap, a monthly subscription fee, and a per-unit fee (for exceeding the data cap). 
+The more flexible wireless data service often provides users with some additional flexibility in terms of <b>time</b>, <b>user</b>, and <b>location</b>.	
 <br>
 
 <p>
 <ul>
 
 <li>
-	<b>The rollover mechanism, allowing the unused data in the current month to be consumed in a future month, is a time-flexible mechanism.</b>
-	We study the economic effect of different rollover mechanisms of AT&T and China Mobile.
-	Moreover, we take into account the pricing optimization, price discrimination based on the Contract Theory, and the competitive MNOs' game-theoretical analysis.
+	<b>Time-Flexibility:</b> The rollover mechanism, allowing the unused data in the current month to be consumed in a future month, is a time-flexible mechanism.
+	In this reseach direction, we study the economic effect of different rollover mechanisms of AT&T and China Mobile.
+	Moreover, we take into account the pricing optimization, price discrimination based on the Contract Theory, and the game-theoretical analysis of market competition.
 </li>
-	<img src="./research/RolloverMechanisms.png" alt="Photo" height="200px" >&nbsp;
+	<img src="./research/Rollover_Mechanisms.png" alt="Photo" height="170px" >&nbsp;
 
 
 <br><br>
 <li>
-	<b>The trading market, allowing users to sell the leftover quota to or buy extra quota from others, is a user-flexible mechanism.</b>
-	We formulate the interactions between the MNO and mobile users as a Multi-Agent Dynamic Game. 
-	Specifically, in each time slot (e.g., every day), the MNO first determines the selling and buying prices with the goal of revenue maximization, then each user decides his trading
-action (by solving a dynamic programming problem) to maximize his long-term payoff. 
+	<b>User-Flexibility:</b> The trading market, allowing users to sell the leftover quota to or buy extra quota from others, is a user-flexible mechanism.
+	The interaction between MNO and mobile users is a Multi-Agent Dynamic Game. 
+	In each time slot (e.g., every day), the MNO first determines the selling and buying prices, then each user decides his trading action. 
 	Due to the availability of monthly data rollover, a user’s daily trading decision corresponds to a dynamic programming problem with two time scales (i.e., day-to-day and
 month-to-month). 
-	Our analysis reveals an optimal trading policy with a target interval structure, specified by a buy-up-to threshold and a sell-down-to threshold in each time slot. Moreover, we show
-that the rollover mechanism makes users sell less and buy more data given the same trading prices, hence it increases the total demand while decreasing the total supply in the data trading
+	In this research direction, we find that the optimal trading policy has a target interval structure, specified by a buy-up-to threshold and a sell-down-to threshold in each time slot. 
+	We also show that the rollover mechanism makes users sell less and buy more data, hence it increases the total demand while decreasing the total supply in the data trading
 market. 
-	Finally, numerical results based on real-world data unveil that the time-flexible rollover mechanism plays a positive role in the user-flexible data trading market, increasing the MNO’s
-revenue by 25% and all users’ payoff by 17% on average.
 </li>
-<img src="./research/TradingSteps.png" alt="Photo" height="200px" >&nbsp;
-<img src="./research/TradingInsights.png" alt="Photo" height="200px" >&nbsp;
+<img src="./research/Trading.png" alt="Photo" height="170px" >&nbsp;
+<img src="./research/Trading_Insights.png" alt="Photo" height="179px" >&nbsp;
 
 
 
 <br><br>
 <li>
-	<b>The day-pass service, allowing users to access his domestic data service with a daily fee in overseas locations, is a location-flexible mechanism.</b>
-	We study the economic effect of the location-flexibility on the overseas market. 
-	The overseas market comprises users who travel overseas within the month, thus is monthly variant. 
+	<b>Location-Flexibility:</b> The Day-Pass service of AT&T, allowing users to access his domestic data service with a daily fee in overseas locations, is a location-flexible mechanism.
+	In this research direction, we study the economic effect of the location-flexibility on the overseas market. 
+	The overseas market comprises users who travel overseas within a month, thus is month-varying. 
 	Each user decides his joint flexibility configuration and data consumption (J-FCDC) every day. 
 	The user’s J-FCDC problem is an on-line payoff maximization. 
-	We analyze its off-line problem (which is NP-hard) and design an on-line strategy with provable performance. 
-	Moreover, we propose a dynamic pricing policy (based on Multi-Arm Bandit learning) for the location-flexible service without relying on the market statistic information. 
-	We find that the location-flexibility induces users to consume more data in low-valuation days, and the MNO benefits from stimulating users’ data consumption through an appropriate
-pricing. 
-	Numerical results based on empirical data show that the location-flexibility improves the MNO’s revenue by 18% and the users’
-payoffs by 12% on average.
+	We analyze its off-line problem (i.e., NP-hard) and design an on-line strategy with provable performance. 
+	We also propose a dynamic pricing policy for the location-flexible service without relying on the market statistic information.
 </li>
-	<img src="./research/Pass_User.png" alt="Photo" height="200px" >&nbsp;
-	<img src="./research/Pass_Performance.png" alt="Photo" height="200px" >&nbsp;
+	<img src="./research/Location.png" alt="Photo" height="170px" >&nbsp;
+	<img src="./research/Location_Performance.png" alt="Photo" height="170px" >&nbsp;
 </ul>
 </p>
 
